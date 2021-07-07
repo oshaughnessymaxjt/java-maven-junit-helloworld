@@ -9,6 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 
@@ -83,5 +84,12 @@ public class HelloAppTest {
         // it is easier to aim for full code coverage and be done with it, than to remember why class X is stuck at
         // 95% code coverage.
         new HelloApp();
+    }
+
+    @Test
+    public void testShouldFail() {
+        String param = "Testing";
+
+        assertEquals("jenkins", param);
     }
 }
