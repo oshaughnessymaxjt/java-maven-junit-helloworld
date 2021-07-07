@@ -86,10 +86,4 @@ public class HelloAppTest {
         new HelloApp();
     }
 
-    @Test
-    public void testShouldFail() {
-        String param = "Testing";
-
-        assertEquals("jenkins", param);
-    }
 }
